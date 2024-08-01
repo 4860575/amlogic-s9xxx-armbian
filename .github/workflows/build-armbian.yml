@@ -22,7 +22,7 @@ on:
       armbian_board:
         description: "Select device board."
         required: false
-        default: "all"
+        default: "s905d"
         type: choice
         options:
           - all
@@ -168,7 +168,7 @@ on:
       armbian_kernel:
         description: "Select kernel version."
         required: false
-        default: "6.6.y"
+        default: "5.15.y"
         type: choice
         options:
           - 5.4.y
@@ -186,7 +186,7 @@ on:
       kernel_repo:
         description: "Set the kernel repository."
         required: false
-        default: "ophub/kernel"
+        default: "4860575/amlogic-s9xxx-armbian"
         type: choice
         options:
           - ophub/kernel
@@ -220,7 +220,7 @@ on:
       builder_name:
         description: "Set Armbian builder signature."
         required: false
-        default: "ophub"
+        default: "Gavin"
         type: choice
         options:
           - ophub
