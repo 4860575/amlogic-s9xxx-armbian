@@ -191,7 +191,6 @@ on:
         options:
           - ophub/kernel
           - 4860575/amlogic-s9xxx-armbian
-          - Gavin/kernel
       kernel_usage:
         description: "Set the tags of the stable kernel."
         required: false
@@ -289,7 +288,7 @@ jobs:
           df -hT ${PWD}
           git clone -q --single-branch --depth=1 --branch=main https://github.com/armbian/build.git build
           ln -sf /builder/build ${GITHUB_WORKSPACE}/build
-          ln -sf /builder/build /home/runner/work/_actions/ophub/amlogic-s9xxx-armbian/main/build
+          ln -sf /builder/build /home/runner/work/_actions/4860575/amlogic-s9xxx-armbian/main/build
           echo "status=success" >> ${GITHUB_OUTPUT}
 
       - name: Compile Armbian [ ${{ inputs.set_release }} ]
